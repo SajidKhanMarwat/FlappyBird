@@ -1,0 +1,11 @@
+C:\Users\khannsaj\source\repos\FlappyBird\FlappyBird\FlappyBird\bin\Debug\FlappyBird.exe.config
+C:\Users\khannsaj\source\repos\FlappyBird\FlappyBird\FlappyBird\bin\Debug\FlappyBird.exe
+C:\Users\khannsaj\source\repos\FlappyBird\FlappyBird\FlappyBird\bin\Debug\FlappyBird.pdb
+C:\Users\khannsaj\source\repos\FlappyBird\FlappyBird\FlappyBird\obj\Debug\FlappyBird.csproj.AssemblyReference.cache
+C:\Users\khannsaj\source\repos\FlappyBird\FlappyBird\FlappyBird\obj\Debug\FlappyBird.csproj.SuggestedBindingRedirects.cache
+C:\Users\khannsaj\source\repos\FlappyBird\FlappyBird\FlappyBird\obj\Debug\FlappyBird.Properties.Resources.resources
+C:\Users\khannsaj\source\repos\FlappyBird\FlappyBird\FlappyBird\obj\Debug\FlappyBird.csproj.GenerateResource.cache
+C:\Users\khannsaj\source\repos\FlappyBird\FlappyBird\FlappyBird\obj\Debug\FlappyBird.csproj.CoreCompileInputs.cache
+C:\Users\khannsaj\source\repos\FlappyBird\FlappyBird\FlappyBird\obj\Debug\FlappyBird.exe
+C:\Users\khannsaj\source\repos\FlappyBird\FlappyBird\FlappyBird\obj\Debug\FlappyBird.pdb
+C:\Users\khannsaj\source\repos\FlappyBird\FlappyBird\FlappyBird\obj\Debug\FlappyBird.FPBird.resources
