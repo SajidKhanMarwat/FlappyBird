@@ -21,12 +21,15 @@ namespace FlappyBird
 
             this.MaximizeBox = false;
 
+            // Making player (picturebox) transparent
+            //_player.BackColor = Color.Transparent;
+
         }
 
         private void lblExit_Click(object sender, EventArgs e)
         {
 
-            //MessageBox.Show("Are you sure?");
+            //MessageBox Before Closing Application
 
             DialogResult = MessageBox.Show("Are you sure to exit?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
@@ -34,6 +37,11 @@ namespace FlappyBird
             {
                 Application.Exit();
             }            
+        }
+
+        private void player_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
