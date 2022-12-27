@@ -46,8 +46,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.label1.Font = new System.Drawing.Font("Stencil", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(12, 489);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 25);
             this.label1.TabIndex = 4;
@@ -56,8 +57,9 @@
             // _Score
             // 
             this._Score.AutoSize = true;
+            this._Score.BackColor = System.Drawing.Color.PaleGoldenrod;
             this._Score.Font = new System.Drawing.Font("Stencil", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._Score.Location = new System.Drawing.Point(108, 13);
+            this._Score.Location = new System.Drawing.Point(107, 489);
             this._Score.Name = "_Score";
             this._Score.Size = new System.Drawing.Size(25, 25);
             this._Score.TabIndex = 5;
@@ -108,7 +110,7 @@
             // gameTimer
             // 
             this.gameTimer.Enabled = true;
-            this.gameTimer.Interval = 20;
+            this.gameTimer.Interval = 30;
             this.gameTimer.Tick += new System.EventHandler(this.GameTimerEvent);
             // 
             // FPBird

@@ -20,7 +20,6 @@ namespace FlappyBird
         {
             InitializeComponent();
 
-
             //this.MaximumSize = new System.Drawing.Size(300, 500);
 
             this.MaximizeBox = false;
@@ -28,10 +27,15 @@ namespace FlappyBird
             // Making player (picturebox) transparent
             //_player.BackColor = Color.Transparent;
 
-
             
 
-            
+            //KeyEventArgs e = new KeyEventArgs(Keys.Space);
+            //if (e.KeyCode == Keys.Space)
+            //{
+            //    lblInitial.Hide();
+            //    gameTimer.Start();
+            //    GameCode();
+            //}
         }
 
         private void lblExit_Click(object sender, EventArgs e)
@@ -54,30 +58,7 @@ namespace FlappyBird
 
         private void GameTimerEvent(object sender, EventArgs e)
         {
-
-            _Player.Top += gravity;
-
-            pipeBottom.Left -= pipeSpeed;
-            pipeTop.Left -= pipeSpeed;
-
-            _Score.Text = Convert.ToString(score);
-            if (pipeBottom.Left < -50 && pipeTop.Left < -50)
-            {
-                _Score.Text = Convert.ToString(score++);
-                pipeBottom.Left = 570;
-                pipeTop.Left = 570;
-            }
-
-
-            if (_Player.Bounds.IntersectsWith(pipeBottom.Bounds)
-                || _Player.Bounds.IntersectsWith(pipeTop.Bounds)
-                || _Player.Bounds.IntersectsWith(ground.Bounds)
-                )
-            {
-                EndGame();
-            }
-
-
+            GameCode();
         }
 
         private void GameKeyIsDown(object sender, KeyEventArgs e)
@@ -95,10 +76,34 @@ namespace FlappyBird
                 gravity = 5;
             }
         }
+        public void GameCode()
+        {
+            _Player.Top += gravity;
+
+            pipeBottom.Left -= pipeSpeed;
+            pipeTop.Left -= pipeSpeed;
+
+            _Score.Text = Convert.ToString(score);
+            if (pipeBottom.Left < -50 && pipeTop.Left < -50)
+            {
+                _Score.Text = Convert.ToString(score++);
+                pipeBottom.Left = 570;
+                pipeTop.Left = 570;
+            }
+
+            if (_Player.Bounds.IntersectsWith(pipeBottom.Bounds)
+                || _Player.Bounds.IntersectsWith(pipeTop.Bounds)
+                || _Player.Bounds.IntersectsWith(ground.Bounds)
+                )
+            {
+                EndGame();
+            }
+        }
 
        public void EndGame()
         {
             gameTimer.Stop();
+            label1.Hide();
             _Score.Text = null;
             _Score.Text += " Game Over";
 
