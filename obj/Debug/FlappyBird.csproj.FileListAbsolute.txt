@@ -20,3 +20,4 @@ C:\Users\Apollo\Desktop\FlappyBird\obj\Debug\FlappyBird.csproj.GenerateResource.
 C:\Users\Apollo\Desktop\FlappyBird\obj\Debug\FlappyBird.csproj.CoreCompileInputs.cache
 C:\Users\Apollo\Desktop\FlappyBird\obj\Debug\FlappyBird.exe
 C:\Users\Apollo\Desktop\FlappyBird\obj\Debug\FlappyBird.pdb
+C:\Users\Apollo\Desktop\FlappyBird\obj\Debug\FlappyBird.StartForm.resources
