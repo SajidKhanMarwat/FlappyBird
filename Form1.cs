@@ -59,6 +59,19 @@ namespace FlappyBird
         private void GameTimerEvent(object sender, EventArgs e)
         {
             GameCode();
+
+            if (score > 5)
+            {
+                gameTimer.Interval = 20;
+            }
+            if(score > 10)
+            {
+                gameTimer.Interval = 10;
+            }
+            if (score > 20)
+            {
+                gameTimer.Interval = 5;
+            }
         }
 
         private void GameKeyIsDown(object sender, KeyEventArgs e)
