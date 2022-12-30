@@ -121,5 +121,20 @@ namespace FlappyBird
                 Application.Exit();
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+            gameTimer.Stop();
+            if ( DialogResult.Yes == MessageBox.Show("Are you sure you want to exit?", "Close", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation))
+            {
+                Application.Exit();
+            }
+            else
+            {
+                gameTimer.Start();
+            }
+                         
+        }
     }
 }

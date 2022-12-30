@@ -18,18 +18,19 @@ namespace FlappyBird
             InitializeComponent();
             btnStart.Hide();
 
-            
-
             //Application.Run(new FPBird());
 
         }
+
+
 
         private void LoaderEvent(object sender, EventArgs e)
         {
 
             progressBar.Value++;
+            lblPercentageCounter.Text = progressBar.Value.ToString() + " %";
 
-                if (progressBar.Value == 100)
+            if (progressBar.Value == 100)
                 {
                     btnStart.Show();
                     loader.Stop(); //timer

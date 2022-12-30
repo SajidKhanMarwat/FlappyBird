@@ -33,21 +33,23 @@
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.btnStart = new System.Windows.Forms.Button();
             this.loader = new System.Windows.Forms.Timer(this.components);
+            this.lblPercentageCounter = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Snap ITC", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(21, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(621, 82);
+            this.label1.Size = new System.Drawing.Size(523, 73);
             this.label1.TabIndex = 0;
             this.label1.Text = "Game Loading...";
             // 
             // progressBar
             // 
+            this.progressBar.BackColor = System.Drawing.Color.Teal;
             this.progressBar.Location = new System.Drawing.Point(75, 167);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(471, 41);
@@ -72,17 +74,30 @@
             this.loader.Interval = 20;
             this.loader.Tick += new System.EventHandler(this.LoaderEvent);
             // 
+            // lblPercentageCounter
+            // 
+            this.lblPercentageCounter.AutoSize = true;
+            this.lblPercentageCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPercentageCounter.ForeColor = System.Drawing.Color.White;
+            this.lblPercentageCounter.Location = new System.Drawing.Point(563, 174);
+            this.lblPercentageCounter.Name = "lblPercentageCounter";
+            this.lblPercentageCounter.Size = new System.Drawing.Size(27, 29);
+            this.lblPercentageCounter.TabIndex = 3;
+            this.lblPercentageCounter.Text = "0";
+            // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkTurquoise;
             this.ClientSize = new System.Drawing.Size(653, 418);
+            this.Controls.Add(this.lblPercentageCounter);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StartForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StartForm";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -95,5 +110,6 @@
         private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Timer loader;
+        private System.Windows.Forms.Label lblPercentageCounter;
     }
 }

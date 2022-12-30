@@ -37,6 +37,7 @@
             this._Player = new System.Windows.Forms.PictureBox();
             this.pipeTop = new System.Windows.Forms.PictureBox();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeBottom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._Player)).BeginInit();
@@ -47,10 +48,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.label1.Font = new System.Drawing.Font("Stencil", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 489);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 25);
+            this.label1.Size = new System.Drawing.Size(80, 25);
             this.label1.TabIndex = 4;
             this.label1.Text = "Score:";
             // 
@@ -58,7 +59,7 @@
             // 
             this._Score.AutoSize = true;
             this._Score.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this._Score.Font = new System.Drawing.Font("Stencil", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._Score.Location = new System.Drawing.Point(107, 489);
             this._Score.Name = "_Score";
             this._Score.Size = new System.Drawing.Size(25, 25);
@@ -89,10 +90,10 @@
             // _Player
             // 
             this._Player.BackColor = System.Drawing.Color.Transparent;
-            this._Player.Image = global::FlappyBird.Properties.Resources.player;
-            this._Player.Location = new System.Drawing.Point(31, 186);
+            this._Player.Image = global::FlappyBird.Properties.Resources.Player_Bird;
+            this._Player.Location = new System.Drawing.Point(59, 202);
             this._Player.Name = "_Player";
-            this._Player.Size = new System.Drawing.Size(86, 62);
+            this._Player.Size = new System.Drawing.Size(58, 46);
             this._Player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this._Player.TabIndex = 1;
             this._Player.TabStop = false;
@@ -113,19 +114,31 @@
             this.gameTimer.Interval = 30;
             this.gameTimer.Tick += new System.EventHandler(this.GameTimerEvent);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(510, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(27, 25);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "X";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // FPBird
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
             this.ClientSize = new System.Drawing.Size(540, 543);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this._Score);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ground);
             this.Controls.Add(this.pipeBottom);
             this.Controls.Add(this._Player);
             this.Controls.Add(this.pipeTop);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FPBird";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -150,6 +163,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label _Score;
         private System.Windows.Forms.Timer gameTimer;
+        private System.Windows.Forms.Label label2;
     }
 }
 

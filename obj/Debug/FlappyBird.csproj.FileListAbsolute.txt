@@ -21,3 +21,15 @@ C:\Users\Apollo\Desktop\FlappyBird\obj\Debug\FlappyBird.csproj.CoreCompileInputs
 C:\Users\Apollo\Desktop\FlappyBird\obj\Debug\FlappyBird.exe
 C:\Users\Apollo\Desktop\FlappyBird\obj\Debug\FlappyBird.pdb
 C:\Users\Apollo\Desktop\FlappyBird\obj\Debug\FlappyBird.StartForm.resources
+Z:\FlappyBird\bin\Debug\FlappyBird.exe.config
+Z:\FlappyBird\bin\Debug\FlappyBird.exe
+Z:\FlappyBird\bin\Debug\FlappyBird.pdb
+Z:\FlappyBird\obj\Debug\FlappyBird.csproj.AssemblyReference.cache
+Z:\FlappyBird\obj\Debug\FlappyBird.csproj.SuggestedBindingRedirects.cache
+Z:\FlappyBird\obj\Debug\FlappyBird.FPBird.resources
+Z:\FlappyBird\obj\Debug\FlappyBird.Properties.Resources.resources
+Z:\FlappyBird\obj\Debug\FlappyBird.StartForm.resources
+Z:\FlappyBird\obj\Debug\FlappyBird.csproj.GenerateResource.cache
+Z:\FlappyBird\obj\Debug\FlappyBird.csproj.CoreCompileInputs.cache
+Z:\FlappyBird\obj\Debug\FlappyBird.exe
+Z:\FlappyBird\obj\Debug\FlappyBird.pdb
