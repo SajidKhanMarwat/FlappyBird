@@ -19,7 +19,7 @@ namespace FlappyBird
 
         private void pbExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            
         }
 
         private void pbRestart_Click(object sender, EventArgs e)
@@ -27,6 +27,18 @@ namespace FlappyBird
             FPBird fPBird = new FPBird();
             fPBird.Show();
             this.Hide();
+        }
+
+        private void lblYes_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FPBird fPBird = new FPBird();
+            fPBird.Show();
+            this.Hide();
+        }
+
+        private void lblNo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

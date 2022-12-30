@@ -139,7 +139,10 @@ namespace FlappyBird
 
             Close close = new Close();
 
-            this.Hide();
+            //this.Hide();
+
+            
+
             close.Show();
 
 
