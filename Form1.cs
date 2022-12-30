@@ -16,6 +16,8 @@ namespace FlappyBird
         int gravity = 7;
         int score = 0;
 
+        int gamePause = 0;
+
         public FPBird()
         {
             InitializeComponent();
@@ -23,6 +25,7 @@ namespace FlappyBird
             //this.MaximumSize = new System.Drawing.Size(300, 500);
 
             this.MaximizeBox = false;
+            lblPause.Hide();
 
             // Making player (picturebox) transparent
             //_player.BackColor = Color.Transparent;
@@ -80,6 +83,19 @@ namespace FlappyBird
             {
                 gravity = -8;
             }
+
+            if (e.KeyCode == Keys.Alt && e.KeyCode == Keys.F4)
+            {
+                Application.Exit();
+            }
+
+            if (e.KeyCode == Keys.Escape)
+            {
+                lblPause.Show();
+                gameTimer.Stop();
+
+            }
+
         }
 
         private void GameKeyIsUp(object sender, KeyEventArgs e)
@@ -120,19 +136,26 @@ namespace FlappyBird
             _Score.Text = null;
             _Score.Text += " Game Over";
 
-            if (DialogResult.Yes == MessageBox.Show("Want to start the Game Again?", "Game Over", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
-            {
-                FPBird newGame = new FPBird();
-                this.Hide();
-                
-                newGame.Show();
 
-                //InitializeComponent();
-            }
-            else
-            {
-                Application.Exit();
-            }
+            Close close = new Close();
+
+            this.Hide();
+            close.Show();
+
+
+            //if (DialogResult.Yes == MessageBox.Show("Want to start the Game Again?", "Game Over", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            //{
+            //    FPBird newGame = new FPBird();
+            //    this.Hide();
+                
+            //    newGame.Show();
+
+            //    //InitializeComponent();
+            //}
+            //else
+            //{
+            //    Application.Exit();
+            //}
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -149,5 +172,13 @@ namespace FlappyBird
             }
                          
         }
+
+        //private void Alt_F4ButtonPress(object sender, KeyPressEventArgs e)
+        //{
+        //    if (e.KeyCode == Keys.Alt && e.KeyChar == Keys.F4)
+        //    {
+
+        //    }
+        //}
     }
 }

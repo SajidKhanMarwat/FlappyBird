@@ -33,3 +33,4 @@ Z:\FlappyBird\obj\Debug\FlappyBird.csproj.GenerateResource.cache
 Z:\FlappyBird\obj\Debug\FlappyBird.csproj.CoreCompileInputs.cache
 Z:\FlappyBird\obj\Debug\FlappyBird.exe
 Z:\FlappyBird\obj\Debug\FlappyBird.pdb
+Z:\FlappyBird\obj\Debug\FlappyBird.Close.resources

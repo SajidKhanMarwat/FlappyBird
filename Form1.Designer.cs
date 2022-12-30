@@ -32,12 +32,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FPBird));
             this.label1 = new System.Windows.Forms.Label();
             this._Score = new System.Windows.Forms.Label();
+            this.gameTimer = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
             this.ground = new System.Windows.Forms.PictureBox();
             this.pipeBottom = new System.Windows.Forms.PictureBox();
             this._Player = new System.Windows.Forms.PictureBox();
             this.pipeTop = new System.Windows.Forms.PictureBox();
-            this.gameTimer = new System.Windows.Forms.Timer(this.components);
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblPause = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeBottom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._Player)).BeginInit();
@@ -66,6 +69,23 @@
             this._Score.TabIndex = 5;
             this._Score.Text = "0";
             this._Score.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // gameTimer
+            // 
+            this.gameTimer.Enabled = true;
+            this.gameTimer.Interval = 30;
+            this.gameTimer.Tick += new System.EventHandler(this.GameTimerEvent);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(510, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(27, 25);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "X";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // ground
             // 
@@ -108,22 +128,35 @@
             this.pipeTop.TabIndex = 0;
             this.pipeTop.TabStop = false;
             // 
-            // gameTimer
+            // lblPause
             // 
-            this.gameTimer.Enabled = true;
-            this.gameTimer.Interval = 30;
-            this.gameTimer.Tick += new System.EventHandler(this.GameTimerEvent);
+            this.lblPause.AutoSize = true;
+            this.lblPause.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPause.Location = new System.Drawing.Point(216, 215);
+            this.lblPause.Name = "lblPause";
+            this.lblPause.Size = new System.Drawing.Size(119, 33);
+            this.lblPause.TabIndex = 7;
+            this.lblPause.Text = "Paused";
             // 
-            // label2
+            // label3
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(510, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 25);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "X";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(121, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Press Esc To Pause";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(11, 29);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(122, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Press Alt+F4 To Exit";
             // 
             // FPBird
             // 
@@ -131,6 +164,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
             this.ClientSize = new System.Drawing.Size(540, 543);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblPause);
             this.Controls.Add(this.label2);
             this.Controls.Add(this._Score);
             this.Controls.Add(this.label1);
@@ -164,6 +200,9 @@
         private System.Windows.Forms.Label _Score;
         private System.Windows.Forms.Timer gameTimer;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblPause;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 

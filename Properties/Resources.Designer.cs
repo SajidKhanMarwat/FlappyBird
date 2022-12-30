@@ -83,6 +83,16 @@ namespace FlappyBird.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exitPNG {
+            get {
+                object obj = ResourceManager.GetObject("exitPNG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap favicon {
             get {
                 object obj = ResourceManager.GetObject("favicon", resourceCulture);
@@ -146,6 +156,16 @@ namespace FlappyBird.Properties {
         internal static System.Drawing.Bitmap Player_Bird {
             get {
                 object obj = ResourceManager.GetObject("Player_Bird", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap restartPNG {
+            get {
+                object obj = ResourceManager.GetObject("restartPNG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
